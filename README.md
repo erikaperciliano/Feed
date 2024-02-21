@@ -6,7 +6,7 @@ A project  that is a feed with some functionalities like: edit, give like and re
 # Tecnologies 🚀
 React ⚛️ <br />
 CSS 🤩 <br />
-Typescript 🦕
+TypeScript 🦕
 # How to get this repository? 🤔
 To obtain this project, follow the steps:
 1. Clone this repository using <code> git clone </code>.
