@@ -1,30 +1,17 @@
-# React + TypeScript + Vite
+# FEED 🗯️
+This is a feed app. 🚀 <br />
+# Proposal 🔥
+A project  that is a feed with some functionalities like: edit, give like and remove a post.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Tecnologies 🚀
+React ⚛️ <br />
+CSS 🤩 <br />
+Typescript 🦕
+# How to get this repository? 🤔
+To obtain this project, follow the steps:
+1. Clone this repository using <code> git clone </code>.
+2. Run the <code> npm install </code> command at the root of the cloned project folder to download the dependencies.
+3. Run <code> npm run dev </code> at the root of the project folder to start the application in development mode.🚀
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Made with 💜 by [Erika Perciliano](https://github.com/erikaperciliano)
+<br />
