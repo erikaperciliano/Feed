@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Post.module.css'
+import { Comment } from './Comment'
 
 export function Post() {
   return (
@@ -35,6 +36,12 @@ export function Post() {
                 <button type='submit'>Comment</button>
             </footer>
         </form>
+
+        <div className={styles.commentList}>
+            <Comment/>
+            <Comment/>
+            <Comment/>
+        </div>
     </article>
   )
 }
