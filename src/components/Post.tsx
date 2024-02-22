@@ -26,6 +26,15 @@ export function Post() {
                 <a href=''>#rocketseat</a> {''} 
             </p>
         </div>
+
+        <form className={styles.commentForm}>
+            <strong>Leave your feedback</strong>
+            <textarea placeholder="leave a comment"/>
+
+            <footer>
+                <button type='submit'>Comment</button>
+            </footer>
+        </form>
     </article>
   )
 }
