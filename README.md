@@ -15,8 +15,6 @@ To obtain this project, follow the steps:
 
 🎯Result:
 ![Desk](https://github.com/erikaperciliano/Feed/assets/48223561/46a5b8d1-1f27-401d-99e1-49caf4d989ad)
-![mobile](https://github.com/erikaperciliano/Feed/assets/48223561/ce1ccf77-36cd-4da0-bd51-551477123d5d)
-
 
 
 Made with 💜 by [Erika Perciliano](https://github.com/erikaperciliano)
