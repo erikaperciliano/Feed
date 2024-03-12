@@ -45,16 +45,23 @@ export function Post({ author, content, publishedAt }: PostAuthorProps) {
     }
 
     const handleNewCommentChange = () => {
+        event?.target.setCustomValidity('')
         setNewCommentText(event?.target.value)
     }
 
-    const deleteComment = (commentToDelete) => {
+    const deleteComment = (commentToDelete: string) => {
         const commentsWithoutDeletedOne = comments.filter(comment => {
             return comment !== commentToDelete
         })
 
         setComments(commentsWithoutDeletedOne)
     }
+
+    const handleNewCommentInvalid = () => {
+        event?.target.setCustomValidity('This field is required!')
+    }
+
+    const isNewCommentEmpty = newCommentText.length === 0;
 
     return (
     <article className={styles.post}>
@@ -83,13 +90,15 @@ export function Post({ author, content, publishedAt }: PostAuthorProps) {
         <form onSubmit={handleCreateNewComment} className={styles.commentForm}>
             <strong>Leave your feedback</strong>
             <textarea
-            value={newCommentText}
                 onChange={handleNewCommentChange}
                 placeholder="leave a comment"
+                value={newCommentText}
+                onInvalid={handleNewCommentInvalid}
+                required
             />
 
             <footer>
-                <button type='submit'>Comment</button>
+                <button type='submit' disabled={isNewCommentEmpty}>Comment</button>
             </footer>
         </form>
 
