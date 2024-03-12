@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { ChangeEvent, FormEvent, InvalidEvent, useState } from 'react'
 
 import { format, formatDistanceToNow } from 'date-fns'
 
@@ -16,7 +16,7 @@ type PostAuthorProps = {
         role: string
     },
     content: {
-        type: string,
+        type: 'paragraph' | 'link',
         content: string
     }[],
     publishedAt: Date;
@@ -37,15 +37,15 @@ export function Post({ author, content, publishedAt }: PostAuthorProps) {
     })
 
 
-    const handleCreateNewComment = () =>{
-        event?.preventDefault();
+    const handleCreateNewComment = (event: FormEvent) =>{
+        event.preventDefault();
 
         setComments([...comments, newCommentText])
         setNewCommentText('')
     }
 
-    const handleNewCommentChange = () => {
-        event?.target.setCustomValidity('')
+    const handleNewCommentChange = (event: ChangeEvent<HTMLTextAreaElement>) => {
+        event.target.setCustomValidity('')
         setNewCommentText(event?.target.value)
     }
 
@@ -57,7 +57,7 @@ export function Post({ author, content, publishedAt }: PostAuthorProps) {
         setComments(commentsWithoutDeletedOne)
     }
 
-    const handleNewCommentInvalid = () => {
+    const handleNewCommentInvalid = (event: InvalidEvent<HTMLTextAreaElement>) => {
         event?.target.setCustomValidity('This field is required!')
     }
 
